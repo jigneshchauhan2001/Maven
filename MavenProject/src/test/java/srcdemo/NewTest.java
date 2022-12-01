@@ -6,5 +6,6 @@ public class NewTest {
   @Test
   public void f() {
 	  System.out.println("test1");
+	  System.out.println("commited");
   }
 }

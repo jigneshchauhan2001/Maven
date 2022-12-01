@@ -1,0 +1,24 @@
+package srcdemo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class TestFile2 {
+	@Test
+	public void f1() {
+		  WebDriverManager.chromedriver().setup();
+		  WebDriver driver = new ChromeDriver();
+		  driver.get("https://facebook.com");
+		  driver.quit();
+		  System.out.println("f1 executed");
+	  }
+	  
+	  
+	  @Test
+	  public void f2() {
+		  System.out.println("f2 executed");
+	  }
+}
